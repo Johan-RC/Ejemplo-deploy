@@ -15,6 +15,7 @@ jobs:
       - name: Configurar Java
         uses: actions/setup-java@v3
         with:
+          distribution: 'temurin'
           java-version: '17'
 
       - name: Dar permisos a Maven
