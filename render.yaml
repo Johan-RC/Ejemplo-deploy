@@ -1,7 +1,8 @@
-Services:
-- type: web
+services:
+  - type: web
     name: ejemplo-deploy
-    runtime: docker
-    rootDir: Ejemplo-deploy
-    dockerfilePath: ./Dockerfile
-    dockerContext: .
+    env: java
+    plan: free
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    autoDeploy: true
