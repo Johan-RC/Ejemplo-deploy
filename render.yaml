@@ -1,7 +1,7 @@
 Services:
 - type: web
-    name: api-springboot
+    name: ejemplo-deploy
     runtime: docker
-    rootDir: Api-SpringBoot
+    rootDir: Ejemplo-deploy
     dockerfilePath: ./Dockerfile
     dockerContext: .
